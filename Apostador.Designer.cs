@@ -46,6 +46,8 @@
             this.lblMaxBet = new System.Windows.Forms.Label();
             this.lblBalance = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtMaxLoose = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -70,7 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 94);
+            this.label3.Location = new System.Drawing.Point(10, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 2;
@@ -96,15 +98,15 @@
             "4096",
             "8192",
             "16384"});
-            this.moneyCBox.Location = new System.Drawing.Point(85, 91);
+            this.moneyCBox.Location = new System.Drawing.Point(110, 73);
             this.moneyCBox.Name = "moneyCBox";
-            this.moneyCBox.Size = new System.Drawing.Size(47, 21);
+            this.moneyCBox.Size = new System.Drawing.Size(73, 21);
             this.moneyCBox.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 128);
+            this.label4.Location = new System.Drawing.Point(10, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 4;
@@ -112,17 +114,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 125);
+            this.textBox1.Location = new System.Drawing.Point(110, 138);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(47, 20);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "125";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(138, 128);
+            this.label5.Location = new System.Drawing.Point(163, 141);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 13);
             this.label5.TabIndex = 6;
@@ -229,11 +232,31 @@
             this.label11.TabIndex = 17;
             this.label11.Text = "%";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(10, 109);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(85, 13);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "Pérdida Máxima:";
+            // 
+            // txtMaxLoose
+            // 
+            this.txtMaxLoose.Location = new System.Drawing.Point(110, 108);
+            this.txtMaxLoose.Name = "txtMaxLoose";
+            this.txtMaxLoose.Size = new System.Drawing.Size(75, 20);
+            this.txtMaxLoose.TabIndex = 19;
+            this.txtMaxLoose.Text = "1000";
+            this.txtMaxLoose.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Apostador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(197, 298);
+            this.Controls.Add(this.txtMaxLoose);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.lblMaxBet);
@@ -280,6 +303,8 @@
         private System.Windows.Forms.Label lblMaxBet;
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtMaxLoose;
 
     }
 }
