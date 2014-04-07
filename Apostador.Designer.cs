@@ -48,6 +48,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtMaxLoose = new System.Windows.Forms.TextBox();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -250,11 +251,20 @@
             this.txtMaxLoose.Text = "1000";
             this.txtMaxLoose.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(122, 208);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(0, 13);
+            this.lblStatus.TabIndex = 20;
+            // 
             // Apostador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(197, 298);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.txtMaxLoose);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -305,6 +315,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtMaxLoose;
+        private System.Windows.Forms.Label lblStatus;
 
     }
 }
